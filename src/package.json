@@ -1,0 +1,27 @@
+{
+  "name": "aurora-dms",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryan-learn/AURORA_DMS.git"
+  },
+  "author": "Bryan Learn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryan-learn/AURORA_DMS/issues"
+  },
+  "homepage": "https://github.com/bryan-learn/AURORA_DMS",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.6.1",
+    "express": "^4.15.3",
+    "ldapjs": "^1.0.2",
+    "request": "^2.81.0"
+  }
+}

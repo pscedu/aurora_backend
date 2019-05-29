@@ -1,0 +1,5 @@
+node_modules
+conf/ldap.conf
+src/aurora.pid
+src/ldap_notes
+src/log_aurora
