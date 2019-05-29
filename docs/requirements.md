@@ -10,6 +10,7 @@ Last Updated: 5/29/2019
 # Goals
 * Our goal is to create a web application that serves as a website/web-portal for use by the AURORA - US project.
 * The backend server component will serve the fronend component requests. 
+* The frontend client component will request website content and actions, such as authenticated logins.
 
 # Requirements
 ## Users stories

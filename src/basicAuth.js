@@ -4,6 +4,8 @@ var ldap = require('ldapjs');
 var conf;
 var new_request;
 
+// LDAP Auth Configuration //
+
 exports.init = function(){
     // Pull in LDAP configuration file
     conf = JSON.parse(fs.readFileSync('../conf/ldap.conf', 'utf8'));

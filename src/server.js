@@ -15,14 +15,20 @@ fs.writeFile('aurora.pid', process.pid, function(err){
     if (err) throw err;
 });
 
+// Frontend Client Configuration //
+
+client_conf = JSON.parse(fs.readFileSync('../conf/frontend.conf', 'utf8'))
+static_dir = client_conf.staticDir		// Directory for all static html/css files and other assests like images
+templates_dir = client_conf.templatesDir	// Directory for all templates which are html files that contain dynamic content (javascript vars that the backend server can change)
+
 // App Server Configuration //
 
 const port = 8000;
 
-app.use(express.static('static'));
+app.use(express.static(static_dir));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.set('views', 'templates');
+app.set('views', templates_dir);
 app.set('view engine', 'ejs');
 
 // for now, save user state in app (must change after demo)
